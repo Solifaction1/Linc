@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_form_phone_numbers",
+  "info": {
+    "displayName": "PhoneNumber"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    }
+  }
+}

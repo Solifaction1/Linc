@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Slide renders a Slide 1`] = `
+<div>
+  <div
+    class="slideContainer"
+  >
+    <img
+      alt="imgAlt"
+      src="imgUrl"
+    />
+  </div>
+</div>
+`;

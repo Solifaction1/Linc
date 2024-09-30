@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quote renders a Quote 1`] = `
+<div>
+  <section
+    class="quote"
+  >
+    <div
+      class="title"
+    >
+      title
+    </div>
+    <p
+      class="author"
+    >
+      firstName name - role - title
+    </p>
+  </section>
+</div>
+`;
+
+exports[`Quote renders a Quote with no rechtsdomein 1`] = `
+<div>
+  <section
+    class="quote"
+  >
+    <div
+      class="title"
+    >
+      title
+    </div>
+    <p
+      class="author"
+    >
+      firstName name - role
+    </p>
+  </section>
+</div>
+`;
+
+exports[`Quote renders a Quote with no rechtsdomein and no role 1`] = `
+<div>
+  <section
+    class="quote"
+  >
+    <div
+      class="title"
+    >
+      title
+    </div>
+    <p
+      class="author"
+    >
+      firstName name
+    </p>
+  </section>
+</div>
+`;
+
+exports[`Quote renders a Quote with no role 1`] = `
+<div>
+  <section
+    class="quote"
+  >
+    <div
+      class="title"
+    >
+      title
+    </div>
+    <p
+      class="author"
+    >
+      firstName name - title
+    </p>
+  </section>
+</div>
+`;

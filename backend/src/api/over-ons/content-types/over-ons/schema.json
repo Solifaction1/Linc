@@ -1,0 +1,75 @@
+{
+  "kind": "singleType",
+  "collectionName": "over_onse",
+  "info": {
+    "singularName": "over-ons",
+    "pluralName": "over-onse",
+    "displayName": "Over ons",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "headers.header",
+      "required": true
+    },
+    "component": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        },
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "sections.quote",
+        "sections.cta",
+        "sections.rechtsdomeinen-cta",
+        "sections.image-article",
+        "sections.kantoor",
+        "sections.color-block-cta",
+        "sections.vertical-list",
+        "sections.double-header-paragraph",
+        "form.custom-form",
+        "sections.onze-medewerkers",
+        "text.ygwys"
+      ]
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": ["gray", "beige", "blue-gray", "dark-green", "light-green"],
+      "default": "gray",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

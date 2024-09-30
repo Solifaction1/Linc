@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link renders a navigation Link 1`] = `
+<div>
+  <a
+    class="link className navigation md false"
+    href="href"
+  >
+    children
+    Hello
+  </a>
+</div>
+`;
+
+exports[`Link renders an external Link 1`] = `
+<div>
+  <a
+    class="link className external lg disabled"
+    href="href"
+    rel="noreferrer"
+    target="_self"
+  >
+    children
+    label
+  </a>
+</div>
+`;

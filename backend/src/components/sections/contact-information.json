@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_contact_informations",
+  "info": {
+    "displayName": "Contact information",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "country": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "component",
+      "repeatable": true,
+      "component": "widgets.contact"
+    }
+  }
+}

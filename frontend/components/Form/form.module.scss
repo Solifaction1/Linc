@@ -1,0 +1,147 @@
+@import 'styles/vars';
+@import 'styles/utilities';
+
+.container {
+    @extend %page-container;
+    grid-template-columns:1fr;
+    padding-top: 0;
+
+    h5 {
+        margin-bottom: calc(#{$spacing-base} * 2.5);
+
+        color: $color-beige-dark;
+
+        font-size: $font-size-title-xs;
+        line-height: 2.7rem;
+        font-weight: $font-weight-medium;
+    }
+
+    .form {
+        @extend %page-container;
+        display: grid;
+        grid-template-areas: 'left right';
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+
+        width: 100%;
+        padding-top: 2rem;
+        @media (max-width: $break-md) {
+            grid-template-areas:"left";
+            grid-template-columns:1fr;
+        }
+
+        input {
+            @media (max-width: $break-xlg) {
+                max-width: 100%;
+            }
+
+            @media (max-width: $break-s) {
+                max-width: 100%;
+            }
+
+            &:not(:last-of-type) {
+                margin-bottom: calc(#{$spacing-base} * 5);
+            }
+            margin-top: 0;
+            padding-top: calc(#{$spacing-base} * 1);
+            padding-bottom: calc(#{$spacing-base} * 1);
+
+            font-size: $font-size-text-md;
+            line-height: 2.7rem;
+
+            &::placeholder {
+                font-size: $font-size-text-md;
+                line-height: 2.7rem;
+            }
+        }
+    }
+
+    .formIntro {
+        padding-bottom: calc(#{$spacing-base} * 2.5);
+    }
+
+    label {
+        font-size: $font-size-text-xlg;
+        line-height: 2.7rem;
+    }
+
+    .submitButton {
+        max-width: fit-content;
+        margin-top: 5rem;
+        border: 1px solid $color-beige-dark;
+
+        background: $color-beige-dark;
+
+        .label {
+            color:$color-white;
+        }
+
+        &:hover {
+            background: $color-beige-dark-opacity-25;
+
+            .label {
+                color: $color-beige-dark;
+            }
+        }
+
+        &:active {
+            background: $color-beige-dark;
+
+            .label {
+                color: $color-white;
+            }
+        }
+
+        &.is-loading {
+            @extend %loading-animation;
+
+            &::after {
+                border-color: $color-gray-tint-80;
+            }
+        }
+
+        &.light {
+            border: 1px solid $color-beige;
+
+            .label {
+                color: $color-beige;
+            }
+
+            &:hover {
+                background: $color-beige-opacity-25;
+            }
+
+            &:active {
+                border: 1px solid $color-gray;
+                background: $color-beige;
+
+                .label {
+                    color: $color-gray;
+                }
+            }
+        }
+
+        &.dark {
+            border: 1px solid $color-gray;
+
+            .label {
+                color: $color-gray;
+            }
+
+            &:hover {
+                background: $color-gray-opacity-25;
+            }
+
+            &:active {
+                background: $color-gray;
+
+                .label {
+                    color: $color-beige;
+                }
+            }
+        }
+        @media (max-width: $break-md) {
+            max-width: 100%;
+        }
+    }
+}

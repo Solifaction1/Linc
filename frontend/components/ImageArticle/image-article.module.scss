@@ -1,0 +1,295 @@
+@import 'styles/vars';
+@import 'styles/utilities';
+
+.imageArticle {
+	margin-top: calc(#{$spacing-base} * 18);
+	margin-bottom: calc(#{$spacing-base} * 8);
+	background-color: $color-gray;
+
+	@media (max-width: $break-lg) {
+		margin-top: calc(#{$spacing-base} * 55);
+	}
+
+	@media (max-width: $break-md) {
+		margin-top: calc(#{$spacing-base} * 42.5);
+	}
+
+	.imageArticleContainer {
+		@extend %page-container;
+		position: relative;
+		z-index: 3;
+		grid-template-areas: 'headertext headertext headertext headertext headertext . headerimg headerimg headerimg headerimg headerimg headerimg';
+
+		@media (max-width: $break-lg) {
+			grid-template-areas:
+				'headerimg headerimg headerimg headerimg headerimg headerimg headerimg headerimg headerimg headerimg headerimg headerimg'
+				'headertext headertext headertext headertext headertext headertext headertext headertext headertext headertext headertext headertext';
+			padding-bottom: unset;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: calc(49% - 6.4rem);
+			z-index: 2;
+
+			width: 7.57rem;
+			height: 7.5rem;
+
+			background: $color-gray;
+
+			opacity: 0.9;
+
+			mix-blend-mode: multiply;
+
+			@media (max-width: $break-lg) {
+				top: 0;
+				right: unset;
+				left: $page-bleed;
+
+				width: 4.6rem;
+				height: 4.6rem;
+			}
+
+			@media (max-width: $break-s) {
+				left: $page-bleed-mobile;
+			}
+		}
+
+		.imageArticleImage {
+			position: absolute;
+			top: -14.5rem;
+			grid-area: headerimg;
+
+			width: 50vw;
+			height: calc(100% + 20.9rem);
+
+			@media (max-width: $break-lg) {
+				position: relative;
+				top: -10.5rem;
+				display: block;
+
+				width: 100%;
+				height: 25rem;
+			}
+
+			@media (max-width: $break-md) {
+				top: 17.7rem;
+				height: 35rem;
+			}
+
+			img {
+				position: relative;
+				object-fit: cover;
+
+				width: 100%;
+				max-width: 72rem;
+				height: 100%;
+
+				object-position: left;
+
+				@media (max-width: $break-lg) {
+					width: calc(100% + calc(#{$spacing-base} * 4.5));
+					max-width: 100rem;
+					height: auto;
+					max-height: 45rem;
+					margin-top: -36.3rem;
+
+					object-position: top;
+				}
+
+				@media (max-width: $break-md) {
+					top: -20.3rem;
+					height: 100%;
+					max-height: 35rem;
+				}
+
+				@media (max-width: $break-s) {
+					width: calc(100% + calc(#{$spacing-base} * 3));
+				}
+			}
+		}
+
+		.imageArticleText {
+			position: relative;
+			grid-area: headertext;
+
+			@media (max-width: $break-lg) {
+				margin-top: -27.7rem;
+				padding: 7.5rem 0;
+			}
+
+			@media (max-width: $break-md) {
+				margin-top: -37.9rem;
+			}
+
+			button {
+				margin-top: calc(#{$spacing-base} * 4);
+			}
+
+			h2 {
+				@extend %h2;
+			}
+
+			.text p {
+				@extend %body-copy-1;
+				margin-top: calc(#{$spacing-base} * 4);
+			}
+		}
+	}
+
+	// ---IMAGE POSITION
+
+
+	&.right {
+		.imageArticleImage {
+			@media (max-width: $break-hd) {
+				text-align: right;
+			}
+		}
+	}
+
+	&.left {
+		@media (max-width: $break-lg) {
+			margin-top: calc(#{$spacing-base} * 55);
+		}
+
+		@media (max-width: $break-md) {
+			margin-top: calc(#{$spacing-base} * 42.5);
+		}
+
+		.imageArticleContainer {
+			grid-template-areas: 'headerimg headerimg headerimg headerimg headerimg headerimg . headertext headertext headertext headertext headertext ';
+
+			@media (max-width: $break-lg) {
+				grid-template-areas:
+					'headerimg headerimg headerimg headerimg headerimg headerimg headerimg headerimg headerimg headerimg headerimg headerimg'
+					'headertext headertext headertext headertext headertext headertext headertext headertext headertext headertext headertext headertext';
+			}
+
+			&::after {
+				right: unset;
+				left: calc(49% - 6.4rem);
+
+				@media (max-width: $break-lg) {
+					right: $page-bleed;
+					bottom: 0;
+					left: unset;
+
+					width: 4.6rem;
+					height: 4.6rem;
+				}
+			}
+
+			.imageArticleText {
+				grid-area: headertext;
+				@media (max-width: $break-md) {
+					margin-top: -37.9rem;
+				}
+			}
+
+			.imageArticleImage {
+				right: 0;
+				left: unset;
+				grid-area: headerimg;
+
+				width: 50vw;
+
+				@media (min-width: $break-hd) {
+					text-align: right;
+				}
+
+				@media (max-width: $break-lg) {
+					position: relative;
+					display: block;
+
+					width: 100%;
+					height: 25rem;
+				}
+
+				@media (max-width: $break-md) {
+					top: 19.7rem;
+					height: 35rem;
+				}
+
+				img {
+					@media (max-width: $break-lg) {
+						position: absolute;
+						left: calc(#{$spacing-base} * (-4.5));
+					}
+
+					@media (max-width: $break-s){
+						left: calc(#{$spacing-base} * (-3));
+					}
+				}
+			}
+		}
+	}
+
+	// ---BACKGROUND COLORS
+
+	&.beige {
+		background-color: $color-beige;
+
+		.imageArticleContainer::after {
+			background: $color-beige;
+		}
+
+		.imageArticleContainer .imageArticleText h2,
+		.imageArticleContainer .imageArticleText li, 
+		.imageArticleContainer .imageArticleText ul, 
+		.imageArticleContainer .imageArticleText ol, 
+		.imageArticleContainer .imageArticleText .text p {
+			color: $color-beige-dark;
+		}
+	}
+
+	&.blueGray {
+		background-color: $color-blue-gray;
+
+		.imageArticleContainer::after {
+			background: $color-blue-gray;
+		}
+
+		.imageArticleContainer .imageArticleText h2,
+		.imageArticleContainer .imageArticleText li, 
+		.imageArticleContainer .imageArticleText ul, 
+		.imageArticleContainer .imageArticleText ol, 
+		.imageArticleContainer .imageArticleText .text p {
+			color: $color-blue-gray-dark;
+		}
+	}
+
+	&.darkGreen {
+		background-color: $color-green-dark;
+
+		.imageArticleContainer::after {
+			background: $color-green-dark;
+		}
+
+		.imageArticleContainer .imageArticleText h2,
+		.imageArticleContainer .imageArticleText li, 
+		.imageArticleContainer .imageArticleText ul, 
+		.imageArticleContainer .imageArticleText ol, 
+		.imageArticleContainer .imageArticleText .text p {
+			color: $color-green;
+		}
+	}
+
+	&.lightGreen {
+		background-color: $color-green;
+
+		.imageArticleContainer::after {
+			background: $color-green;
+		}
+
+		.imageArticleContainer .imageArticleText h2,
+		.imageArticleContainer .imageArticleText li, 
+		.imageArticleContainer .imageArticleText ul, 
+		.imageArticleContainer .imageArticleText ol, 
+		.imageArticleContainer .imageArticleText .text p {
+			color: $color-green-dark;
+		}
+	}
+}

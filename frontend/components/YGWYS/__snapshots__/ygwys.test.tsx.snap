@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ygwys renders a YGWYS component 1`] = `
+<div>
+  <div
+    class="ygwys 
+			description false"
+  >
+    <p>
+      Do you get what you see?
+    </p>
+  </div>
+</div>
+`;

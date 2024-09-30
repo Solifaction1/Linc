@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BlogsCTA renders a BlogsCTA 1`] = `
+<div>
+  <article
+    class="blogsCTA"
+  >
+    <div
+      class="blogsCTAContainer"
+    >
+      <h2
+        class="title"
+      >
+        title
+      </h2>
+      <p
+        class="description"
+      >
+        description
+      </p>
+      <div
+        class="cta"
+      >
+        <button
+          class="button false primary md false  "
+          type="button"
+        >
+          <p
+            class="label"
+          >
+            cta title
+          </p>
+        </button>
+      </div>
+    </div>
+    <div
+      class="blogs"
+    >
+      <div
+        class="cta"
+      >
+        <a
+          class="link  link md false"
+          href="/"
+        >
+          Blog 1
+        </a>
+        <svg
+          fill="currentColor"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+          />
+        </svg>
+      </div>
+      <div
+        class="cta"
+      >
+        <a
+          class="link  link md false"
+          href="/"
+        >
+          Blog 2
+        </a>
+        <svg
+          fill="currentColor"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+          />
+        </svg>
+      </div>
+    </div>
+  </article>
+</div>
+`;

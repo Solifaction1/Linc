@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActionButton renders an ActionButton 1`] = `
+<div>
+  <button
+    class="
+			ActionButton 
+			actionButton 
+			close 
+			lg"
+    type="button"
+  >
+    <div />
+    <div />
+  </button>
+</div>
+`;

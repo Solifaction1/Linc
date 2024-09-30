@@ -1,0 +1,111 @@
+@import 'styles/vars';
+@import 'styles/utilities';
+
+.kantoor {
+	@extend %page-container;
+	grid-template-areas:
+		'kantoorInformation kantoorInformation kantoorInformation kantoorInformation kantoorInformation kantoorInformation kantoorInformation kantoorInformation kantoorInformation kantoorInformation kantoorInformation kantoorInformation'
+		'kantoren kantoren kantoren kantoren kantoren kantoren kantoren kantoren kantoren kantoren kantoren kantoren';
+	padding-top: 0;
+
+	.kantoorInformation {
+		grid-area: kantoorInformation;
+
+		h2 {
+			@extend %h2;
+			margin-bottom: 2rem;
+			color: $color-beige-dark;
+			text-align: center;
+			@media (max-width: $break-lg) {
+				text-align: left;
+			}
+		}
+
+		.text p {
+			@extend %body-copy-1;
+			text-align: center;
+			@media (max-width: $break-lg) {
+				text-align: left;
+			}
+		}
+	}
+
+	.kantorenContainer {
+		grid-area: kantoren;
+
+		.kantorenWrapper {
+			display: flex;
+			align-items: flex-start;
+			@media (max-width: $break-lg) {
+				flex-wrap: wrap;
+				align-items: unset;
+				justify-content: center;
+			}
+
+			.kantoor {
+				display: flex;
+				flex-direction: column;
+
+				max-width: 26.9rem;
+				margin-top: 10rem;
+				padding: unset;
+
+				@media (max-width: $break-lg) {
+					max-width: 50%;
+					margin-left: 0;
+				}
+
+				@media (max-width: $break-md) {
+					max-width: 100%;
+				}
+
+				.title {
+					position: relative;
+
+					max-width: 17.2rem;
+					min-height: 9rem;
+					margin-bottom: 2rem;
+					padding-bottom: 2rem;
+
+					color: $color-beige-dark;
+
+					font-size: $font-size-title-md-m;
+					line-height: calc(
+						#{$font-size-title-md-m} * #{$line-height-multiplier-title}
+					);
+
+					&::after {
+						content: '';
+						position: absolute;
+						bottom: 0;
+						left: 0;
+
+						width: 100%;
+						height: 1px;
+
+						background: $color-beige-dark;
+					}
+
+					@media (max-width: $break-lg) {
+						max-width: 80%;
+					}
+
+					@media (max-width: $break-md) {
+						max-width: 100%;
+					}
+				}
+
+				.phone,
+				.adress {
+					@extend %body-copy-1;
+					color: gray;
+				}
+
+				.button {
+					width: fit-content;
+					margin-top: 4rem;
+				}
+			}
+		}
+	}
+}

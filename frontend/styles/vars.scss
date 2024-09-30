@@ -1,0 +1,202 @@
+@import 'https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap';
+@import 'https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro';
+
+// // MEDIA QUERY SIZE
+$break-s: 480px;
+$break-md: 768px;
+$break-lg: 1024px;
+$break-xlg: 1280px;
+$break-hd: 1920px;
+
+// // COLORS
+
+// GRAY
+$color-white: white;
+$color-white-opacity-25: #ffffff25;
+$color-gray-tint-100: #fff;
+$color-gray-tint-90: #ededee;
+$color-gray-tint-80: #dadbdc;
+$color-gray-tint-70: #c8c9cb;
+$color-gray-tint-60: #b5b7b9;
+$color-gray-tint-50: #a3a6a8;
+$color-gray-tint-40: #919497;
+$color-gray-tint-30: #7e8285;
+$color-gray-tint-20: #6c7074;
+$color-gray-tint-10: #595e62;
+$color-gray: #474c51;
+$color-gray-opacity-25: #474c5125;
+$color-gray-shade-10: #404449;
+$color-gray-shade-20: #393d41;
+$color-gray-shade-30: #323539;
+$color-gray-shade-40: #2b2e31;
+$color-gray-shade-50: #242629;
+$color-gray-shade-60: #1c1e20;
+$color-gray-shade-70: #151718;
+$color-gray-shade-80: #0e0f10;
+$color-gray-shade-90: #070808;
+$color-gray-shade-100: #000;
+$color-black: black;
+
+// BEIGE
+$color-beige-tint-100: #fff;
+$color-beige-tint-90: #fbfaf9;
+$color-beige-tint-80: #f6f4f3;
+$color-beige-tint-70: #f2efec;
+$color-beige-tint-60: #eee9e6;
+$color-beige-tint-50: #eae4e0;
+$color-beige-tint-40: #e5dfda;
+$color-beige-tint-30: #e1d9d4;
+$color-beige-tint-20: #ddd4cd;
+$color-beige-tint-10: #d8cec7;
+$color-beige: #d4c9c1;
+$color-beige-opacity-25: #d4c9c125;
+$color-beige-dark: #a19a96;
+$color-beige-dark-opacity-25: #a19a9625;
+$color-beige-shade-10: #bfb5ae;
+$color-beige-shade-20: #aaa19a;
+$color-beige-shade-30: #948d87;
+$color-beige-shade-40: #7f7974;
+$color-beige-shade-50: #6a6561;
+$color-beige-shade-60: #55504d;
+$color-beige-shade-70: #403c3a;
+$color-beige-shade-80: #2a2827;
+$color-beige-shade-90: #151413;
+$color-beige-shade-100: #000;
+$color-brown: #7F7F7F;
+
+// GREEN
+$color-green: #707f75;
+$color-green-opacity-25: #707f7525;
+$color-green-dark: #424c44;
+$color-green-dark-opacity-25: #424c4425;
+
+
+// BLUE-GRAY
+$color-blue-gray: #b9bcc1;
+$color-blue-gray-opacity-25: #b9bcc125;
+$color-blue-gray-dark: #7b8084;
+$color-blue-gray-dark-opacity-25: #7b808425;
+
+// BLUE
+$color-blue: #5D5DC6;
+$color-blue-opacity-25: #5D5DC625;
+$color-blue-dark: #252554;
+$color-blue-dark-opacity-25: #25255425;
+
+// RED
+$color-red: #FD5B57;
+$color-red-opacity-25: #FD5B5725;
+$color-red-dark: #993939;
+$color-red-dark-opacity-25: #99393925;
+
+
+// BLACK
+$color-black-tint-100: #fff;
+$color-black-tint-90: #ececec;
+$color-black-tint-80: #d9d8d9;
+$color-black-tint-70: #c6c5c5;
+$color-black-tint-60: #b3b2b2;
+$color-black-tint-50: #a09f9f;
+$color-black-tint-40: #8c8b8c;
+$color-black-tint-30: #797879;
+$color-black-tint-20: #666565;
+$color-black-tint-10: #535152;
+$color-black: #403e3f;
+$color-black-shade-10: #3a3839;
+$color-black-shade-20: #333232;
+$color-black-shade-30: #2d2b2c;
+$color-black-shade-40: #262526;
+$color-black-shade-50: #201f20;
+$color-black-shade-60: #1a1919;
+$color-black-shade-70: #131313;
+$color-black-shade-80: #0d0c0d;
+$color-black-shade-90: #060606;
+$color-black-shade-100: #000;
+
+// STATUS
+$color-error: #bc334a;
+$color-succes: #1bb538;
+
+// // FONT
+
+// FONT FAMILY
+$font-family-title: 'Neue Haas Grotesk Text Pro', sans-serif;
+$font-family-text: 'Neue Haas Grotesk Text Pro', sans-serif;
+$font-family: 'Neue Haas Grotesk Text Pro', sans-serif;
+
+// FONT WEIGHT
+$font-weight-thin: 100;
+$font-weight-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-regular-plus: 450;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;
+
+// FONT SIZE
+
+// TITLE
+$font-size-title-xxxlg: 6.4rem;
+$font-size-title-xxlg: 4.8rem;
+$font-size-title-xlg: 3.6rem;
+$font-size-title-lg: 3.2rem;
+$font-size-title-md-m: 2.8rem;
+$font-size-title-md: 2.4rem;
+$font-size-title-sm: 2.2rem;
+$font-size-title-s: 1.9rem;
+$font-size-title-xs: 1.8rem;
+$font-size-title-xxs: 1.7rem;
+$font-size-title-xxxs: 1.6rem;
+
+// TEXT
+$font-size-text-xxxlg: 2.2rem;
+$font-size-text-xxlg: 2rem;
+$font-size-text-xlg: 1.8rem;
+$font-size-text-lg: 1.7rem;
+$font-size-text-md: 1.6rem;
+$font-size-text-sm: 1.5rem;
+$font-size-text-xs: 1.4rem;
+$font-size-text-xxs: 1.3rem;
+$font-size-text-xxxs: 1.2rem;
+
+// LINE HEIGHT
+$line-height-multiplier-title: 1.25;
+$line-height-multiplier-text: 1.75;
+
+// // STROKE WEIGHT
+$border-width-xl: 0.5rem;
+$border-width-lg: 0.3rem;
+$border-width-md: 0.2rem;
+$border-width-sm: 0.1rem;
+$border-width-xs: 0.05rem;
+
+// // BOX SHADOW
+$box-shadow: rgba(0, 0, 0, 5%) 0 6px 24px 0, rgba(0, 0, 0, 8%) 0 0 0 1px;
+
+// // SPACING
+$spacing-base: 0.8rem;
+$page-bleed: 3.6rem;
+$page-bleed-mobile: 2.4rem;
+
+// // ANIMATION SPEED
+$animation-in-lg: 0.4s;
+$animation-out-lg: 0.3s;
+$animation-in: 0.3s;
+$animation-out: 0.2s;
+
+// CONTAINERS
+$popup-container: 67rem;
+$desktop-container: 114.3rem;
+
+// FORM
+$input-field-width: 45rem;
+$input-field-height: 3rem;
+
+// CALCULATIONS
+$gap-calculation: calc(22% / 11);
+
+// GENERAL HEIGHTS
+$header-height: 12rem;

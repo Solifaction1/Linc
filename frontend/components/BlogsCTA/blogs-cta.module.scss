@@ -1,0 +1,90 @@
+@import 'styles/vars';
+@import 'styles/utilities';
+
+.blogsCTA {
+    @extend %page-container;
+    grid-template-areas: 'blogsCTAContainer blogsCTAContainer blogsCTAContainer blogsCTAContainer blogsCTAContainer blogs blogs blogs blogs blogs blogs blogs';
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-color: $color-red;
+
+    @media (max-width: $break-lg) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2, p, a {
+        color: $color-red-dark;
+    }
+
+    .blogsCTAContainer {
+        display: flex;
+        flex-direction: column;
+        grid-area: blogsCTAContainer;
+        gap: calc(#{$spacing-base} * 5);
+
+        padding: calc(#{$spacing-base} * 12.5) calc(#{$spacing-base} * 12) calc(#{$spacing-base} * 12.5) calc(#{$spacing-base} * 18.5);
+
+        @media (max-width: $break-lg) {
+            gap: calc(#{$spacing-base} * 4);
+            padding: calc(#{$spacing-base} * 7.5) calc(#{$spacing-base} * 3);
+
+            .title {
+                font-size: $font-size-title-md;
+                line-height: 3,5rem;
+            }
+        }
+
+        p {
+            font-size: $font-size-text-xlg;
+            line-height: 3,15rem;
+
+            @media (max-width: $break-lg) {
+                font-size: $font-size-text-xs;
+                line-height: 2,45rem;
+            }
+        }
+
+        .cta {
+            button {
+                border-color: $color-red-dark;
+            }
+
+            p {
+                color: $color-red-dark;
+                line-height: 2,7rem;
+
+                @media (max-width: $break-lg) {
+                    font-size: $font-size-text-xlg;
+                    line-height: 2,7rem;
+                }
+            }
+        }
+    }
+
+    .blogs {
+        grid-area: blogs;
+        padding: calc(#{$spacing-base} * 12.5) calc(#{$spacing-base} * 18.5) calc(#{$spacing-base} * 12.5) 0;
+    
+        @media (max-width: $break-lg) {
+            padding: 0 calc(#{$spacing-base} * 3) calc(#{$spacing-base} * 7.5) calc(#{$spacing-base} * 3);
+        }
+        
+        .cta {
+            @extend %accordion-link;
+
+            border-bottom: 1px solid $color-red-dark;
+
+            &:first-of-type {
+                border-top: 1px solid $color-red-dark;
+            }
+
+            svg {
+                fill: $color-red-dark;
+            }
+        }
+    }
+}

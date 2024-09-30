@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders a Header 1`] = `
+<div>
+  <header
+    class="header gray right bottomText
+			false"
+  >
+    <div
+      class="headerContainer"
+    >
+      <div
+        class="headerTextWrapper"
+      >
+        <div
+          class="text"
+        >
+          <div
+            class="ygwys 
+			undefined undefined"
+          >
+            <p>
+              description
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="headerImageWrapper"
+      >
+        <img
+          alt="alternativeText"
+          class="image"
+          data-nimg="1"
+          decoding="async"
+          height="1025"
+          src="/api/custom-loader?url=https%3A%2F%2Fvia.placeholder.com%2F876x1025?q=100"
+          srcset="/api/custom-loader?url=https%3A%2F%2Fvia.placeholder.com%2F876x1025?q=100 1x, /api/custom-loader?url=https%3A%2F%2Fvia.placeholder.com%2F876x1025?q=100 2x"
+          style="color: transparent;"
+          width="876"
+        />
+      </div>
+    </div>
+    <div
+      class="headerBottomContainer"
+    >
+      <div
+        class="bottomText"
+      >
+        <div
+          class="bottomTextWrapper"
+        >
+          <div
+            class="text"
+          >
+            <div
+              class="ygwys 
+			undefined undefined"
+            >
+              <p>
+                description bottom
+              </p>
+            </div>
+          </div>
+          <button
+            class="button false primary md false  "
+            type="button"
+          >
+            <p
+              class="label"
+            >
+              Onze aanpak
+            </p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+`;

@@ -1,0 +1,419 @@
+@import 'styles/vars';
+@import 'styles/utilities';
+
+.header {
+	padding-top: 7.5rem;
+
+	.headerContainer {
+		@extend %page-container;
+		position: relative;
+		z-index: 3;
+		grid-template-areas: 'headertext headertext headertext headertext headertext . headerimg headerimg headerimg headerimg headerimg headerimg';
+
+		padding-top: unset;
+		padding-bottom: unset;
+
+		@media (max-width: $break-lg) {
+			grid-template-areas:
+				'headertext headertext headertext headertext headertext headertext headertext headertext headertext headertext headertext headertext'
+				'headerimg headerimg headerimg headerimg headerimg headerimg headerimg headerimg headerimg headerimg headerimg headerimg';
+
+			margin-top: calc(#{$spacing-base} * 9);
+			padding: calc(#{$spacing-base} * 4) $page-bleed;
+			padding-bottom: unset;
+		}
+
+		@media (max-width: $break-s) {
+			padding: calc(#{$spacing-base} * 8) $page-bleed-mobile;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			right: calc(49% - 6.4rem);
+			bottom: 0;
+			z-index: 2;
+
+			width: 7.57rem;
+			height: 7.5rem;
+
+			background: $color-gray;
+
+			opacity: 0.9;
+
+			mix-blend-mode: multiply;
+
+			@media (max-width: $break-lg) {
+				right: unset;
+				bottom: 0;
+				left: $page-bleed;
+
+				width: 4.6rem;
+				height: 4.6rem;
+			}
+
+			@media (max-width: $break-s) {
+				left: $page-bleed-mobile;
+			}
+		}
+
+		.headerTextWrapper {
+			position: relative;
+			grid-area: headertext;
+			padding-bottom: 7.49rem;
+
+			.text {
+				h1 {
+					@extend %h1;
+				}
+
+				p {
+					@extend %body-copy-1;
+					margin-top: calc(#{$spacing-base} * 4);
+				}
+			}
+
+			button {
+				margin-top: calc(#{$spacing-base} * 4);
+			}
+		}
+
+		.headerImageWrapper {
+			position: absolute;
+			grid-area: headerimg;
+			width: 50vw;
+
+			@media (max-width: $break-lg) {
+				position: relative;
+				display: block;
+
+				width: 100%;
+				height: 51.5rem;
+				margin-bottom: -19.5rem;
+			}
+
+			@media (max-width: $break-s) {
+				top: 5.8rem;
+				margin-bottom: -10.5rem;
+			}
+
+			img {
+				object-fit: cover;
+
+				width: 100%;
+				max-width: 72rem;
+				height: 100%;
+
+				object-position: left;
+
+				@media (max-width: $break-lg) {
+					width: calc(100% + calc(#{$spacing-base} * 4.5));
+					max-width: 100rem;
+					height: 100%;
+
+					object-position: top;
+				}
+
+				@media (max-width: $break-md) {
+					height: 100%;
+				}
+
+				@media (max-width: $break-s) {
+					width: calc(100% + calc(#{$spacing-base} * 3));
+				}
+			}
+		}
+	}
+
+	.headerBottomContainer {
+		margin-bottom: -7.5rem;
+		padding-top: 12rem;
+		background: white;
+
+		@media (max-width: $break-lg) {
+			margin-bottom: -3.5rem;
+			padding-top: 28rem;
+		}
+
+		@media (max-width: $break-md) {
+			margin-bottom: -3.5rem;
+			padding-top: 28rem;
+		}
+
+		@media (max-width: $break-s) {
+			margin-bottom: -3.5rem;
+			padding-top: 20rem;
+		}
+
+		.bottomText {
+			@extend %page-container;
+			grid-template-areas: 'text text text text text . . . . . . .';
+			padding-top: unset;
+
+			@media (max-width: $break-lg) {
+				grid-template-areas: 'text text text text text text text text text text text text';
+			}
+
+			.bottomTextWrapper {
+				grid-area: text;
+
+				.text {
+					display: flex;
+					flex-direction: column;
+					color: $color-beige;
+
+					h2 {
+						@extend %h2;
+						color: $color-beige-dark;
+					}
+
+					p {
+						@extend %body-copy-1;
+						margin-top: calc(#{$spacing-base} * 4);
+						color: $color-gray;
+					}
+				}
+
+				button {
+					margin-top: calc(#{$spacing-base} * 4);
+					border: 1px solid $color-beige-dark;
+
+					p {
+						color: $color-beige-dark;
+					}
+				}
+			}
+		}
+	}
+
+	// ---SHORT HEADER
+
+	&.noBottomText {
+		margin-bottom: calc(#{$spacing-base} * 19.3);
+
+		.headerContainer .headerImageWrapper {
+			height: calc(100% + 7.5rem);
+
+			@media (max-width: $break-lg) {
+				height: calc(100% + 2.6rem);
+				height: 45.4rem;
+				margin-bottom: -2.2rem;
+			}
+
+			@media (max-width: $break-md) {
+				top: 0;
+				height: 35rem;
+			}
+
+			@media (max-width: $break-s) {
+				top: -2.2rem;
+				margin-bottom: -10.5rem;
+			}
+
+			img {
+				height: 100%;
+				object-position: center;
+
+				@media (max-width: $break-lg) {
+					height: 100%;
+				}
+
+				@media (max-width: $break-md) {
+					height: 100%;
+					max-height: unset;
+				}
+			}
+		}
+	}
+
+	&.noImage {
+		margin-bottom: 0;
+	}
+
+	// ---IMAGE POSITION
+
+	&.right {
+		.headerImageWrapper {
+			@media (max-width: $break-hd) {
+				text-align: right;
+			}
+		}
+	}
+
+	&.left {
+		.headerContainer {
+			grid-template-areas: 'headerimg headerimg headerimg headerimg headerimg headerimg . headertext headertext headertext headertext headertext ';
+			padding-top: unset;
+			padding-bottom: unset;
+
+			@media (max-width: $break-lg) {
+				grid-template-areas:
+					'headertext headertext headertext headertext headertext headertext headertext headertext headertext headertext headertext headertext'
+					'headerimg headerimg headerimg headerimg headerimg headerimg headerimg headerimg headerimg headerimg headerimg headerimg';
+			}
+
+			&::after {
+				right: unset;
+				left: calc(49% - 6.4rem);
+
+				@media (max-width: $break-lg) {
+					right: $page-bleed;
+					bottom: 0;
+					left: unset;
+
+					width: 4.6rem;
+					height: 4.6rem;
+				}
+			}
+
+			.headerImageWrapper {
+				right: calc(#{$spacing-base} * -0);
+
+				@media (min-width: $break-hd) {
+					text-align: right;
+				}
+
+				@media (max-width: $break-lg) {
+					position: relative;
+					display: block;
+
+					width: 100%;
+					margin-bottom: -21.5rem;
+				}
+
+				@media (max-width: $break-md) {
+					top: -2.2rem;
+				}
+
+				@media (max-width: $break-s) {
+					margin-bottom: -12.5rem;
+				}
+
+				img {
+					@media (max-width: $break-lg) {
+						position: relative;
+						left: calc(0.8rem * (-4.5));
+					}
+				}
+			}
+		}
+
+		.headerBottomContainer {
+			.bottomText {
+				grid-template-areas: '. . . . . . . text text text text text';
+
+				@media (max-width: $break-lg) {
+					grid-template-areas: 'text text text text text text text text text text text text';
+				}
+			}
+		}
+	}
+
+	&.left.noBottomText {
+		.headerContainer {
+			.headerImageWrapper {
+				@media (max-width: $break-lg) {
+					top: -1.6rem;
+					margin-bottom: -3.6rem;
+				}
+
+				@media (max-width: $break-md) {
+					height: 35rem;
+					margin-bottom: -4.6rem;
+				}
+			}
+		}
+	}
+
+	// ---BACKGROUND COLORS
+
+	&.beige {
+		background-color: $color-beige;
+
+		.headerContainer::after {
+			background: $color-beige;
+		}
+
+		.headerTextWrapper .text h1,
+		.headerTextWrapper .text h2,
+		.headerTextWrapper .text h3,
+		.headerTextWrapper .text li,
+		.headerTextWrapper .text ul,
+		.headerTextWrapper .text ol,
+		.headerTextWrapper .text p {
+			color: $color-gray;
+		}
+	}
+
+	&.blueGray {
+		background-color: $color-blue-gray;
+
+		.headerContainer::after {
+			background: $color-blue-gray;
+		}
+
+		.headerTextWrapper .text h1,
+		.headerTextWrapper .text h2,
+		.headerTextWrapper .text h3,
+		.headerTextWrapper .text li,
+		.headerTextWrapper .text ul,
+		.headerTextWrapper .text ol,
+		.headerTextWrapper .text p {
+			color: $color-gray;
+		}
+	}
+
+	&.darkGreen {
+		background-color: $color-green-dark;
+
+		.headerContainer::after {
+			background: $color-green-dark;
+		}
+
+		.headerTextWrapper .text h1,
+		.headerTextWrapper .text h2,
+		.headerTextWrapper .text h3,
+		.headerTextWrapper .text li,
+		.headerTextWrapper .text ul,
+		.headerTextWrapper .text ol,
+		.headerTextWrapper .text p {
+			color: $color-beige;
+		}
+	}
+
+	&.lightGreen {
+		background-color: $color-green;
+
+		.headerContainer::after {
+			background: $color-green;
+		}
+
+		.headerTextWrapper .text h1,
+		.headerTextWrapper .text h2,
+		.headerTextWrapper .text h3,
+		.headerTextWrapper .text li,
+		.headerTextWrapper .text ul,
+		.headerTextWrapper .text ol,
+		.headerTextWrapper .text p {
+			color: $color-beige;
+		}
+	}
+
+	&.gray {
+		background-color: $color-gray;
+
+		.headerContainer::after {
+			background: $color-gray;
+		}
+
+		.headerTextWrapper .text h1,
+		.headerTextWrapper .text h2,
+		.headerTextWrapper .text h3,
+		.headerTextWrapper .text li,
+		.headerTextWrapper .text ul,
+		.headerTextWrapper .text ol,
+		.headerTextWrapper .text p {
+			color: $color-beige;
+		}
+	}
+}

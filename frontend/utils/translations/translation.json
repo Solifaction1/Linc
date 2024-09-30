@@ -1,0 +1,23 @@
+{
+  "en": {
+    "translation": {
+      "general": {
+        "showLess": "Show less"
+      }
+    }
+  },
+  "nl": {
+    "translation": {
+      "general": {
+        "showLess": "Toon minder"
+      }
+    }
+  },
+  "fr": {
+    "translation": {
+      "general": {
+        "showLess": "Montrer moins"
+      }
+    }
+  }
+}

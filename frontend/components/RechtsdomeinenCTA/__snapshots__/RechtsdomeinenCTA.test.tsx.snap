@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RechtsdomeinenCTA renders a RechtsdomeinenCTA 1`] = `
+<div>
+  <article
+    class="rechtsdomeinenCTA"
+  >
+    <div
+      class="rechtsdomeinenCTAContainer"
+    >
+      <div
+        class="text false"
+      >
+        <h2
+          class="title"
+        >
+          title
+        </h2>
+        <p
+          class="description"
+        >
+          description
+        </p>
+        <div
+          class="cta"
+        >
+          <button
+            class="button false primary md false  darkGreen"
+            type="button"
+          >
+            <p
+              class="label"
+            >
+              cta title
+            </p>
+          </button>
+        </div>
+      </div>
+      <div
+        class="image"
+      >
+        <img
+          alt="name"
+          data-nimg="1"
+          decoding="async"
+          height="0"
+          src="/api/custom-loader?url=https%3A%2F%2Fvia.placeholder.com%2F400x500?q=100"
+          srcset="/api/custom-loader?url=https%3A%2F%2Fvia.placeholder.com%2F400x500?q=100 1x"
+          style="color: transparent;"
+          width="0"
+        />
+      </div>
+    </div>
+    <div
+      class="rechtsDomeinen"
+    >
+      <div
+        class="rechtsDomeinenContainer"
+      >
+        <div
+          class="cta"
+        >
+          <a
+            class="link  link md false"
+            href="/onze-rechtsdomeinen#1"
+          >
+            Rechtsdomein 1
+          </a>
+          <svg
+            fill="currentColor"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+            />
+          </svg>
+        </div>
+        <div
+          class="cta"
+        >
+          <a
+            class="link  link md false"
+            href="/onze-rechtsdomeinen#2"
+          >
+            Rechtsdomein 2
+          </a>
+          <svg
+            fill="currentColor"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+`;

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageArticle renders an ImageArticle 1`] = `
+<div>
+  <article
+    class="imageArticle gray right"
+  >
+    <div
+      class="imageArticleContainer"
+    >
+      <div
+        class="imageArticleImage"
+      >
+        <img
+          alt="name"
+          data-nimg="1"
+          decoding="async"
+          height="0"
+          src="/api/custom-loader?url=https%3A%2F%2Fvia.placeholder.com%2F400x500?q=100"
+          srcset="/api/custom-loader?url=https%3A%2F%2Fvia.placeholder.com%2F400x500?q=100 1x"
+          style="color: transparent;"
+          width="0"
+        />
+      </div>
+      <div
+        class="imageArticleText"
+      >
+        <h2>
+          Find out what our customers have to say.
+        </h2>
+        <div
+          class="ygwys 
+			text undefined"
+        >
+          <p>
+            description imageACTA
+          </p>
+        </div>
+        <button
+          class="button false primary md false  gray"
+          type="button"
+        >
+          <p
+            class="label"
+          >
+            cta title
+          </p>
+        </button>
+      </div>
+    </div>
+  </article>
+</div>
+`;

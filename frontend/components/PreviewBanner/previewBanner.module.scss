@@ -1,0 +1,16 @@
+@import 'styles/vars';
+@import 'styles/utilities';
+
+.previewBanner {
+	@extend %absolute-banner;
+	z-index: 2;
+
+	width: 100%;
+	padding: 1rem;
+
+	background-color: $color-beige;
+	color: $color-white;
+	box-shadow: $box-shadow;
+
+	font-family: $font-family-title;
+}

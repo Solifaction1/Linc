@@ -1,0 +1,114 @@
+@import 'styles/vars';
+@import 'styles/utilities';
+
+.colorBlockCTA {
+	@extend %page-container;
+	position: relative;
+	z-index: 3;
+	grid-template-areas: 'left left left left left left right right right right right right';
+	grid-gap: 0;
+
+	width: 100%;
+	margin-top: calc(#{$spacing-base} * 0);
+	margin-right: 0;
+	margin-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+
+	@media (max-width: $break-lg) {
+		grid-template-areas:
+			'left left left left left left left left left left left left'
+			'right right right right right right right right right right right right';
+	}
+
+	.leftColorBlock {
+		grid-area: left;
+		background-color: $color-blue;
+		color: $color-blue-dark;
+
+		.leftContainer {
+			margin-left: auto;
+			padding: calc(#{$spacing-base} * 8) calc(#{$spacing-base} * 12)
+				calc(#{$spacing-base} * 8) 0;
+
+			@media (max-width: $break-xlg) {
+				padding: calc(#{$spacing-base} * 8) calc(#{$spacing-base} * 12)
+					calc(#{$spacing-base} * 8) 3.6rem;
+			}
+
+			.text {
+				p,
+				h2,
+				h1,
+				ul,
+				ol,
+				li {
+					color: $color-blue-dark;
+				}
+			}
+		}
+	}
+
+	.rightColorBlock {
+		grid-area: right;
+		background-color: $color-blue-dark;
+		color: $color-blue;
+
+		.rightContainer {
+			margin-right: auto;
+			padding: calc(#{$spacing-base} * 8) 0 calc(#{$spacing-base} * 8)
+				calc(#{$spacing-base} * 11);
+
+			@media (max-width: $break-xlg) {
+				padding: calc(#{$spacing-base} * 8) 3.6rem calc(#{$spacing-base} * 8)
+					calc(#{$spacing-base} * 11);
+			}
+
+			.text {
+				p,
+				h2,
+				h1,
+				ul,
+				ol,
+				li {
+					color: $color-blue;
+				}
+			}
+		}
+	}
+
+	.leftColorBlock,
+	.rightColorBlock {
+		display: flex;
+		align-items: center;
+		min-height: 46.6rem;
+
+		.leftContainer,
+		.rightContainer {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			max-width: 57.15rem;
+			height: 100%;
+
+			.cta {
+				margin-top: 4rem;
+			}
+
+			@media (max-width: $break-lg) {
+				justify-content: center;
+
+				max-width: unset;
+				margin-right: unset;
+				margin-left: unset;
+				padding: 7.5rem 3.6rem;
+			}
+
+			@media (max-width: $break-s) {
+				padding: 7.5rem 2.4rem;
+			}
+		}
+	}
+}

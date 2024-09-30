@@ -1,0 +1,50 @@
+@import "styles/vars";
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  display: flex;
+
+  margin: 0 0.5rem;
+  padding: 1rem;
+  border: 0;
+  border-radius: 10%;
+
+  background: none;
+
+  cursor: pointer;
+
+  font-size: $font-size-title-sm;
+  transition: $animation-out;
+
+  &::before {
+    content: "";
+    display: inline-block;
+
+    margin: 0 0.6rem;
+    border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
+  }
+
+  &:hover {
+    background-color: $color-gray-tint-30;
+    transition: $animation-in;
+  }
+
+  &.next {
+    right: 0;
+
+    &::before {
+      border-left: 1rem solid $color-succes;
+    }
+  }
+
+  &.prev {
+    left: 0;
+
+    &::before {
+      border-right: 1rem solid $color-succes;
+    }
+  }
+}

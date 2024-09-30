@@ -1,0 +1,118 @@
+@import "styles/vars";
+
+.dataCompliantLinks {
+    .dataCompliantLinksCollection {
+        display: flex;
+        grid-gap: 2%;
+        gap: 2%;
+
+        width: 100%;
+        margin-bottom: calc(#{$spacing-base} * 2);
+
+        .copyright, .link p {
+            color: $color-white;
+        }
+
+        .copyright {
+            @media (max-width: $break-md) {
+                margin-bottom: calc(#{$spacing-base} * 2);
+            }
+            
+            @media (min-width: $break-md) {
+                min-width: 36rem;
+                max-width: 44rem;
+            }
+
+            @media (min-width: $break-xlg) {
+                width: 38rem;
+            }
+
+            margin: 0;
+            font-size: $font-size-text-xxxs;
+            line-height: 2.1rem;
+        }
+        
+        @media (max-width: $break-md) {
+            flex-direction: column;
+
+            .languageSwitch {
+                display: none;
+            }
+        }
+
+        @media (max-width: $break-lg) {
+            .languageSwitch {
+                padding-top: 2rem;
+            }
+        }
+
+        .languageSwitch {
+            width: 35rem;
+
+            @media (max-width: $break-xlg) {
+                width: 30rem;
+            }
+        
+            button, a {
+                padding-top: 0;
+                padding-left: 0;
+
+                color: $color-white;
+
+                line-height: 2.1rem;
+                font-weight: $font-weight-regular;
+            }
+        }
+
+        .link {
+            p {
+                background-image: none;
+
+                font-size: $font-size-text-xxxs;
+                line-height: 2.1rem;
+                text-decoration: underline;
+            }
+
+            &:hover {
+                text-decoration: none;
+
+                p {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    p {
+        margin-right: calc(#{$spacing-base} * 1.5);
+
+        font-size: $font-size-text-md;
+        font-weight: $font-weight-regular;
+        line-height: 2rem;
+    }
+
+    @media (min-width: $break-md) {
+        width: 100%;
+
+        p {
+            margin-right: calc(#{$spacing-base} * 2);
+        }
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        @media (max-width: $break-md) {
+            flex-direction: column;
+            width: 100%;
+
+            .link {
+                margin-bottom: calc(#{$spacing-base} * 2);
+            }
+        }
+
+        width: 32%;
+    }
+}

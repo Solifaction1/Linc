@@ -1,0 +1,26 @@
+@import 'styles/vars';
+
+.root {
+	display: flex;
+	flex-flow: row wrap;
+	@media (max-width: $break-md) {
+		flex-direction: column;
+	}
+
+	@media (min-width: $break-md) {
+		padding-left: 50rem;
+	}
+
+	a {
+		color: #b51c36;
+	}
+}
+
+.dark {
+	background-color: #2f3061; // TODO: SASS-variabele gebruiken
+	color: white;
+
+	a {
+		color: white;
+	}
+}

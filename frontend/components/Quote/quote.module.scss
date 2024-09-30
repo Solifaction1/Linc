@@ -1,0 +1,58 @@
+@import 'styles/vars';
+@import 'styles/utilities';
+
+.quote {
+	@extend %page-container;
+	grid-template-areas:
+		'. title title title title title title title title title title .'
+		'author author author author author author author author author author author author';
+	gap: calc(#{$spacing-base} * 2);
+
+	min-height: 30rem;
+	margin-top: calc(#{$spacing-base} * 7.5);
+	margin-bottom: calc(#{$spacing-base} * 7.5);
+	padding-top: calc(#{$spacing-base} * 7.5);
+	padding-bottom: calc(#{$spacing-base} * 7.5);
+
+	text-align: center;
+
+	@media (max-width: $break-md) {
+		margin-top: calc(#{$spacing-base} * 4);
+		margin-bottom: calc(#{$spacing-base} * 4);
+		padding-top: calc(#{$spacing-base} * 4);
+		padding-bottom: calc(#{$spacing-base} * 4);
+	}
+
+	.title {
+		grid-area: title;
+
+		color: $color-beige-dark;
+
+		white-space: pre-line;
+
+		word-wrap: break-word;
+
+		font-family: $font-family-title;
+		font-size: $font-size-title-xxlg;
+
+		@media (max-width: $break-md) {
+			font-size: $font-size-title-xlg;
+			line-height: 4.5rem;
+		}
+	}
+
+	.author {
+		grid-area: author;
+
+		color: $color-beige-dark;
+
+		font-family: $font-family-text;
+		font-size: $font-size-title-xs;
+		line-height: 3.7rem;
+
+		@media (max-width: $break-md) {
+			font-size: $font-size-text-xs;
+			line-height: 3.7rem;
+		}
+	}
+}

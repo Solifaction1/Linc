@@ -1,0 +1,79 @@
+@import "styles/vars";
+@import 'styles/utilities';
+
+.footer {
+    background-color: $color-gray;
+
+    .footerWrapper {
+        @extend %page-container;
+        padding-bottom: 0;
+        
+        @media (min-width: $break-xlg) {
+            grid-template-columns: 40rem 4fr 6fr;
+        }
+
+        @media (max-width: $break-xlg) {
+            grid-template-columns: 38rem 4fr 6fr;
+        }
+
+        @media (max-width: $break-md) {
+            display: flex;
+            flex-direction: column;
+            padding-top: calc(#{$spacing-base} * 8);
+        }
+
+        .logo {
+            margin-bottom: calc(#{$spacing-base} * 6);
+
+            @media (max-width: $break-md) {
+                margin-bottom: calc(#{$spacing-base} * 7.5);
+            }
+        }
+        
+        .internalLinksWrapper {
+            @media (max-width: $break-md) {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: calc(#{$spacing-base} * 10);
+
+                .languageSwitch {
+                    button, a {
+                        padding-top: 0;
+                        padding-left: 0;
+
+                        color: $color-white;
+
+                        line-height: 2.1rem;
+                        font-weight: $font-weight-regular;
+                    }
+                }
+            }
+        }
+
+        .link {
+            max-height: 3rem;
+            margin-bottom: calc(#{$spacing-base} * 2);
+            text-decoration: none;
+
+            p {
+                @extend %body-copy-3;
+                color: $color-white;
+                font-size: $font-size-text-md;
+                line-height: 2.1rem;
+            }
+        }
+
+        .externalLink {
+            @media (max-width: $break-md) {
+                margin-bottom: calc(#{$spacing-base} * 3);
+            }
+        }
+    }
+
+    .dataCompliantLinksWrapper {
+        @extend %page-container;
+        display: flex;
+        padding-top: 0;
+        padding-bottom: calc(#{$spacing-base} * 5);
+    }
+}

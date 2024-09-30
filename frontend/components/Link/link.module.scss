@@ -1,0 +1,63 @@
+@import "styles/vars";
+@import "styles/utilities";
+
+.link {
+  display: flex;
+
+  font-size: $font-size-text-md;
+  font-family: $font-family-text;
+  text-decoration: underline;
+
+  &.external{
+    .externalIcon{
+      display: block;
+      fill: $color-gray;
+    }
+
+    &:active{    
+      .externalIcon{
+        fill: $color-beige-dark;    
+      }
+    }
+
+    &.sm{
+      font-size: $font-size-text-sm;
+
+      .externalIcon{
+        max-width:  $font-size-text-sm;
+        max-height: $font-size-text-sm;
+      }
+    }
+    
+    &.md{
+      font-size: $font-size-text-md;
+
+      .externalIcon{
+        max-width: $font-size-text-md;
+        max-height: $font-size-text-md;
+      }
+    }
+    
+    &.lg{
+      font-size: $font-size-text-lg;
+      
+      .externalIcon{
+        max-width: $font-size-text-lg;
+        max-height: $font-size-text-lg;
+      }
+    }
+  }
+
+  &.disabled{
+    opacity: .5;
+    pointer-events: none;
+  }
+
+  &.navigation{
+    color: $color-gray-shade-50;
+
+    font-size: $font-size-title-md;
+    font-weight: $font-weight-bold;
+    text-decoration: none;
+  }
+}

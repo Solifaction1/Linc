@@ -1,0 +1,97 @@
+@import "styles/vars";
+@import "styles/utilities";
+
+.section {
+    overflow: hidden;
+
+    width: 70vw;
+    margin: 0 auto;
+
+    transition: height $animation-in ease;
+
+    &.active{
+        overflow: unset;
+    }
+
+    .accordionButton {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+        min-height: calc(#{$spacing-base} * 11);
+        @media (max-width: $break-md) {
+            min-height: calc(#{$spacing-base} * 8);
+        }
+
+        margin-bottom: calc(#{$spacing-base} * 4);
+        border: none;
+        border-top: 1px solid $color-beige-dark;
+
+        background-color: transparent;
+
+        cursor: pointer;
+
+        .title {
+            color: $color-beige-dark;
+
+            font-size: $font-size-title-md-m;
+            font-weight: $font-weight-regular;
+            text-align: start;
+            line-height: 3.5rem;
+
+            @media (max-width: $break-md) {
+                font-size: $font-size-title-xs;
+                line-height: 2.25rem;
+            }
+        }
+
+        .arrowWrapper {
+            position: relative;
+            min-width: calc(#{$spacing-base} * 6);
+            min-height: calc(#{$spacing-base} * 6);
+
+
+            svg {
+                width: 5rem;
+                height: 5rem;
+                fill: $color-green-dark;
+            }
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            fill: $color-beige-dark;
+
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .accordionContainer {
+        position: relative;
+        z-index: 1;
+
+        padding-bottom: calc(#{$spacing-base} * 6);
+        border-top: unset;
+		
+        line-height: calc($font-size-text-sm * 1.4);
+		
+        p {
+            font-size: $font-size-text-xlg;
+
+            @media (max-width: $break-md) {
+                font-size: $font-size-text-sm;
+            }
+        }
+
+        img {
+            @media (min-width: $break-md) {
+                max-width: 75%;
+            }
+        }
+    }
+}

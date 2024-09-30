@@ -1,0 +1,60 @@
+@import 'styles/vars';
+@import 'styles/utilities';
+
+.navigationWrapper {
+    @extend %page-container;
+    position: relative;
+    display: flex;
+    padding: calc(#{$spacing-base} * 5) $page-bleed;
+    
+    @media (min-width: $break-xlg) {
+        padding: calc(#{$spacing-base} * 5) 0 calc(#{$spacing-base} * 5);
+    }
+
+    @media (max-width: $break-s) {
+        padding: calc(#{$spacing-base} * 5) $page-bleed-mobile;
+    }
+    
+    .navigationWrapper {
+        display: flex;
+        gap: calc(#{$spacing-base} * 3);
+        align-items: center;
+        justify-content: flex-end;
+
+        .languageSwitch {
+            height: 70%;
+        }
+
+        .employeeSwitch {
+            height: 75%;
+        }
+
+        padding: calc(#{$spacing-base} * 1) 0;
+
+        .navigationMainLinkWrapper {
+            position: relative;
+
+            .navigationMainLink {
+                display: flex;
+                border: none;
+                background: none;
+
+                cursor: pointer;
+
+                &:focus-visible {
+                    outline: $border-width-md solid $color-white;
+                }
+            }
+        }
+
+        .arrow {
+            transition: transform $animation-in ease;
+
+            &.active {
+                transform: rotate(-180deg);
+            }
+
+            height: 65%; 
+        }
+    }
+}

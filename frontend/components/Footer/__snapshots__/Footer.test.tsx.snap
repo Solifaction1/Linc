@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders a Footer 1`] = `
+<div>
+  <footer
+    class="footer"
+  >
+    <section
+      class="footerWrapper"
+    >
+      <div>
+        <a
+          href="/"
+        >
+          <img
+            alt="logo"
+            class="logo"
+            data-nimg="1"
+            decoding="async"
+            height="68"
+            src="/images/logo.svg"
+            srcset="/images/logo.svg 1x, /images/logo.svg 2x"
+            style="color: transparent;"
+            width="172"
+          />
+        </a>
+      </div>
+      <div
+        class="internalLinks"
+      >
+        <a
+          class="link link link md false"
+          href="/parent1"
+        >
+          <p>
+            Parent 1
+          </p>
+        </a>
+        <a
+          class="link link link md false"
+          href="/parent2"
+        >
+          <p>
+            Parent 2
+          </p>
+        </a>
+        <a
+          class="link link link md false"
+          href="/contact-information"
+        >
+          <p>
+            Contact Information
+          </p>
+        </a>
+      </div>
+      <div
+        class="iconsRow undefined"
+      >
+        <p
+          class="text"
+        />
+      </div>
+    </section>
+    <section
+      class="dataCompliantLinksWrapper"
+    />
+  </footer>
+</div>
+`;

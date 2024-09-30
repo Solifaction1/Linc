@@ -1,0 +1,978 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmployeeSwitch renders a EmployeeSwitch with five employees 1`] = `
+<div>
+  <div
+    class="employeeSwitch className"
+  >
+    <button
+      class="employeeLink activeLang"
+      type="button"
+    >
+      title
+      <svg
+        class="false arrow"
+        fill="currentColor"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div
+    class="dropDown"
+    style="height: 0px;"
+  >
+    <div
+      class="urlWrapper"
+    >
+      <div
+        class="urlList"
+      >
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            aFirstName
+             
+            aName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            bFirstName
+             
+            bName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="urlList"
+      >
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            cFirstName
+             
+            cName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            dFirstName
+             
+            dName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="urlList"
+      >
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            eFirstName
+             
+            eName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EmployeeSwitch renders a EmployeeSwitch with four employees 1`] = `
+<div>
+  <div
+    class="employeeSwitch className"
+  >
+    <button
+      class="employeeLink activeLang"
+      type="button"
+    >
+      title
+      <svg
+        class="false arrow"
+        fill="currentColor"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div
+    class="dropDown"
+    style="height: 0px;"
+  >
+    <div
+      class="urlWrapper"
+    >
+      <div
+        class="urlList"
+      >
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            aFirstName
+             
+            aName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            bFirstName
+             
+            bName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="urlList"
+      >
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            cFirstName
+             
+            cName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="urlList"
+      >
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            dFirstName
+             
+            dName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EmployeeSwitch renders a EmployeeSwitch with one employee 1`] = `
+<div>
+  <div
+    class="employeeSwitch className"
+  >
+    <button
+      class="employeeLink activeLang"
+      type="button"
+    >
+      title
+      <svg
+        class="false arrow"
+        fill="currentColor"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div
+    class="dropDown"
+    style="height: 0px;"
+  >
+    <div
+      class="urlWrapper"
+    >
+      <div
+        class="urlList"
+      >
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            aFirstName
+             
+            aName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="urlList"
+      />
+      <div
+        class="urlList"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EmployeeSwitch renders a EmployeeSwitch with seven employees 1`] = `
+<div>
+  <div
+    class="employeeSwitch className"
+  >
+    <button
+      class="employeeLink activeLang"
+      type="button"
+    >
+      title
+      <svg
+        class="false arrow"
+        fill="currentColor"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div
+    class="dropDown"
+    style="height: 0px;"
+  >
+    <div
+      class="urlWrapper"
+    >
+      <div
+        class="urlList"
+      >
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            aFirstName
+             
+            aName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            bFirstName
+             
+            bName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            cFirstName
+             
+            cName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="urlList"
+      >
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            dFirstName
+             
+            dName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            eFirstName
+             
+            eName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="urlList"
+      >
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            fFirstName
+             
+            fName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            gFirstName
+             
+            gName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EmployeeSwitch renders a EmployeeSwitch with six employees 1`] = `
+<div>
+  <div
+    class="employeeSwitch className"
+  >
+    <button
+      class="employeeLink activeLang"
+      type="button"
+    >
+      title
+      <svg
+        class="false arrow"
+        fill="currentColor"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div
+    class="dropDown"
+    style="height: 0px;"
+  >
+    <div
+      class="urlWrapper"
+    >
+      <div
+        class="urlList"
+      >
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            aFirstName
+             
+            aName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            bFirstName
+             
+            bName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="urlList"
+      >
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            cFirstName
+             
+            cName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            dFirstName
+             
+            dName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="urlList"
+      >
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            eFirstName
+             
+            eName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            fFirstName
+             
+            fName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EmployeeSwitch renders a EmployeeSwitch with three employees 1`] = `
+<div>
+  <div
+    class="employeeSwitch className"
+  >
+    <button
+      class="employeeLink activeLang"
+      type="button"
+    >
+      title
+      <svg
+        class="false arrow"
+        fill="currentColor"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div
+    class="dropDown"
+    style="height: 0px;"
+  >
+    <div
+      class="urlWrapper"
+    >
+      <div
+        class="urlList"
+      >
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            aFirstName
+             
+            aName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="urlList"
+      >
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            bFirstName
+             
+            bName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="urlList"
+      >
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            cFirstName
+             
+            cName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`EmployeeSwitch renders a EmployeeSwitch with two employees 1`] = `
+<div>
+  <div
+    class="employeeSwitch className"
+  >
+    <button
+      class="employeeLink activeLang"
+      type="button"
+    >
+      title
+      <svg
+        class="false arrow"
+        fill="currentColor"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div
+    class="dropDown"
+    style="height: 0px;"
+  >
+    <div
+      class="urlWrapper"
+    >
+      <div
+        class="urlList"
+      >
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            aFirstName
+             
+            aName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="urlList"
+      >
+        <div
+          class="urlListWrapper"
+        >
+          <a
+            class="link url cta md false"
+            href="/employee/undefined"
+          >
+            bFirstName
+             
+            bName
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.83,11.29,10.59,7.05a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41L12.71,12,9.17,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.29,1,1,0,0,0,.71-.29l4.24-4.24A1,1,0,0,0,14.83,11.29Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div
+        class="urlList"
+      />
+    </div>
+  </div>
+</div>
+`;

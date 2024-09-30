@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ColorBlockCTA renders an ColorBlockCTA 1`] = `
+<div>
+  <article
+    class="colorBlockCTA"
+  >
+    <div
+      class="leftColorBlock"
+    >
+      <div
+        class="leftContainer"
+      >
+        <div
+          class="text"
+        >
+          <div
+            class="ygwys 
+			undefined undefined"
+          >
+            <p>
+              description bottom left
+            </p>
+          </div>
+        </div>
+        <div
+          class="cta"
+        >
+          <button
+            class="button false primary md false  lightBlue"
+            type="button"
+          >
+            <p
+              class="label"
+            >
+              Afspraak maken
+            </p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="rightColorBlock"
+    >
+      <div
+        class="rightContainer"
+      >
+        <div
+          class="text"
+        >
+          <div
+            class="ygwys 
+			undefined undefined"
+          >
+            <p>
+              description bottom right
+            </p>
+          </div>
+        </div>
+        <div
+          class="cta"
+        >
+          <button
+            class="button false primary md false  darkBlue"
+            type="button"
+          >
+            <p
+              class="label"
+            >
+              Contact
+            </p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </article>
+</div>
+`;

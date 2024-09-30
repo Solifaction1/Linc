@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_form_firstname_lastnames",
+  "info": {
+    "displayName": "FirstnameLastname"
+  },
+  "options": {},
+  "attributes": {
+    "LabelFirstname": {
+      "type": "string"
+    },
+    "ValueFirstname": {
+      "type": "string"
+    },
+    "ValueLastname": {
+      "type": "string"
+    },
+    "LabelLastname": {
+      "type": "string"
+    }
+  }
+}

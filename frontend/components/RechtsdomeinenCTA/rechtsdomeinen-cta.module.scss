@@ -1,0 +1,317 @@
+@import 'styles/vars';
+@import 'styles/utilities';
+
+.rechtsdomeinenCTA {
+	@extend %page-container;
+	position: relative;
+	z-index: 3;
+	grid-template-areas: 'rechtsdomeinenCTAContainer rechtsdomeinenCTAContainer rechtsdomeinenCTAContainer rechtsdomeinenCTAContainer rechtsdomeinenCTAContainer rechtsdomeinenCTAContainer rechtsDomeinen rechtsDomeinen rechtsDomeinen rechtsDomeinen rechtsDomeinen rechtsDomeinen';
+	grid-gap: 0;
+
+	width: 100%;
+	margin-right: 0;
+	margin-left: 0;
+	padding: 0;
+
+	@media (max-width: $break-lg) {
+		grid-template-areas:
+			'imageMobile imageMobile imageMobile imageMobile imageMobile imageMobile imageMobile imageMobile imageMobile imageMobile imageMobile imageMobile'
+			'rechtsdomeinenCTAContainer rechtsdomeinenCTAContainer rechtsdomeinenCTAContainer rechtsdomeinenCTAContainer rechtsdomeinenCTAContainer rechtsdomeinenCTAContainer rechtsdomeinenCTAContainer rechtsdomeinenCTAContainer rechtsdomeinenCTAContainer rechtsdomeinenCTAContainer rechtsdomeinenCTAContainer rechtsdomeinenCTAContainer'
+			'rechtsDomeinen rechtsDomeinen rechtsDomeinen rechtsDomeinen rechtsDomeinen rechtsDomeinen rechtsDomeinen rechtsDomeinen rechtsDomeinen rechtsDomeinen rechtsDomeinen rechtsDomeinen';
+		margin-top: calc(#{$spacing-base} * 55);
+	}
+
+	@media (max-width: $break-md) {
+		margin-top: calc(#{$spacing-base} * 42.5);
+	}
+
+	.imageMobile {
+		position: absolute;
+		top: -14.5rem;
+		left: 0;
+		grid-area: imageMobile;
+
+		width: 50vw;
+		height: calc(100% + 20.9rem);
+
+		@media (max-width: $break-lg) {
+			position: relative;
+			top: -10.3rem;
+			display: block;
+
+			width: 100%;
+			max-width: calc(100% - 7.2rem);
+			height: 25rem;
+		}
+
+		@media (max-width: $break-md) {
+			top: 20rem;
+			height: 35rem;
+		}
+
+		@media (max-width: $break-s) {
+			max-width: calc(100% - 6rem);
+		}
+
+		img {
+			position: relative;
+			object-fit: cover;
+
+			width: 100%;
+			max-width: 72rem;
+			height: 100%;
+
+			object-position: left;
+
+			@media (max-width: $break-lg) {
+				width: calc(100% + calc(#{$spacing-base} * 4.5));
+				max-width: 100rem;
+				height: auto;
+				max-height: 45rem;
+				margin-top: -30rem;
+
+				object-position: top;
+			}
+
+			@media (max-width: $break-md) {
+				top: -20.3rem;
+				height: 100%;
+				max-height: 35rem;
+			}
+		}
+	}
+
+	.textMobile {
+		position: relative;
+		grid-area: rechtsdomeinenCTAContainer;
+
+		@media (max-width: $break-lg) {
+			margin-top: -21rem;
+			padding: 7.5rem 0;
+		}
+
+		@media (max-width: $break-md) {
+			margin-top: -30.5rem;
+		}
+
+		.text p {
+			@extend %body-copy-1;
+			margin-top: calc(#{$spacing-base} * 4);
+		}
+	}
+
+	.rechtsdomeinenCTAContainer {
+		display: grid;
+		grid-area: rechtsdomeinenCTAContainer;
+		background-color: $color-green-dark;
+
+		@media (max-width: $break-lg) {
+			display: block;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			z-index: 2;
+
+			background: $color-green;
+
+			opacity: 0.9;
+
+			mix-blend-mode: multiply;
+
+			@media (max-width: $break-lg) {
+				top: 6.4rem;
+				right: $page-bleed;
+
+				width: 4.6rem;
+				height: 4.6rem;
+			}
+		}
+
+		.text {
+			display: flex;
+			flex-direction: column;
+			gap: calc(#{$spacing-base} * 5);
+			justify-content: center;
+
+			max-width: 57.15rem;
+			margin-right: auto;
+			margin-left: auto;
+			padding-top: calc(#{$spacing-base} * 8);
+			padding-bottom: calc(#{$spacing-base} * 8);
+
+			@media (max-width: $break-xlg) {
+				gap: calc(#{$spacing-base} * 3.5);
+				padding: calc(#{$spacing-base} * 8) calc(#{$spacing-base} * 12)
+					calc(#{$spacing-base} * 8) 3.6rem;
+			}
+
+			@media (max-width: $break-lg) {
+				display: block;
+				max-width: unset;
+				padding: 7.5rem 3.6rem;
+			}
+
+			@media (max-width: $break-s) {
+				padding: 7.5rem 2.4rem;
+			}
+
+			.title,
+			.description {
+				color: $color-green !important;
+				font-weight: $font-weight-regular;
+			}
+
+			.title {
+				@media (max-width: $break-lg) {
+					font-size: $font-size-title-md-m;
+					line-height: 3.5rem;
+				}
+			}
+
+			.description,
+			.cta p {
+				font-size: $font-size-text-xlg;
+			}
+
+			.description {
+				line-height: 3.15rem;
+
+				@media (max-width: $break-lg) {
+					font-size: $font-size-text-lg;
+					line-height: 2.45rem;
+				}
+			}
+
+			.cta {
+				p {
+					line-height: 2.7rem;
+				}
+			}
+		}
+
+		.image {
+			position: relative;
+			right: calc(#{$spacing-base} * -0);
+
+			width: 100%;
+			margin-top: auto;
+			@media (min-width: $break-hd) {
+				text-align: right;
+			}
+
+			img {
+				object-fit: cover;
+
+				width: 100%;
+				max-height: 46rem;
+
+				object-position: left;
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				z-index: 2;
+
+				width: 7.57rem;
+				height: 7.5rem;
+
+				background: $color-green;
+
+				opacity: 0.9;
+
+				mix-blend-mode: multiply;
+			}
+		}
+	}
+
+	.rechtsDomeinen {
+		grid-area: rechtsDomeinen;
+		background-color: $color-green;
+
+		.rechtsDomeinenContainer {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+			max-width: 57.15rem;
+			height: 100%;
+			margin-right: auto;
+			padding: calc(#{$spacing-base} * 8) 0 calc(#{$spacing-base} * 8)
+				calc(#{$spacing-base} * 11);
+
+			@media (max-width: $break-xlg) {
+				padding: calc(#{$spacing-base} * 8) 3.6rem calc(#{$spacing-base} * 8)
+					calc(#{$spacing-base} * 11);
+			}
+
+			@media (max-width: $break-lg) {
+				max-width: unset;
+				padding: 7.5rem 3.6rem;
+			}
+
+			@media (max-width: $break-s) {
+				padding: 7.5rem 2.4rem;
+			}
+
+			.cta {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+
+				width: 100%;
+				border-bottom: 1px solid $color-green-dark;
+
+				&:first-of-type {
+					border-top: 1px solid $color-green-dark;
+				}
+
+				a {
+					width: 100%;
+					margin-left: 1.5rem;
+					padding-top: calc(#{$spacing-base} * 2);
+					padding-bottom: calc(#{$spacing-base} * 2);
+
+					color: $color-green-dark;
+
+					text-decoration: none;
+					font-size: $font-size-title-md;
+					line-height: 5.8rem;
+
+					@media (max-width: $break-lg) {
+						font-size: $font-size-title-xs;
+					}
+				}
+
+				svg {
+					width: 5rem;
+					height: 5rem;
+
+					fill: $color-green-dark;
+
+					font-weight: 400;
+				}
+
+				&:hover {
+					background: $color-green-dark-opacity-25;
+				}
+
+				&:active {
+					background: $color-green-dark;
+
+					a {
+						color: $color-green;
+					}
+
+					svg {
+						fill: $color-green;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PreviewBanner renders a PreviewBanner 1`] = `
+<div>
+  <div
+    class="previewBanner"
+  >
+    <span>
+      You are currently viewing in Preview Mode. 
+    </span>
+    <button
+      class="button false primary sm false  beige"
+      type="button"
+    >
+      <p
+        class="label"
+      >
+        Turn off preview mode
+      </p>
+    </button>
+  </div>
+</div>
+`;

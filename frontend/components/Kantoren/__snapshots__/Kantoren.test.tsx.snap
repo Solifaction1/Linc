@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RechtsdomeinenCTA renders a RechtsdomeinenCTA 1`] = `
+<div>
+  <section
+    class="kantoor"
+  >
+    <div
+      class="kantoorInformation"
+    >
+      <h2>
+        kantoren 1
+      </h2>
+      <div
+        class="text"
+      >
+        <div
+          class="ygwys 
+			undefined undefined"
+        >
+          <p>
+            description
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="kantorenContainer"
+    >
+      <div
+        class="kantorenWrapper"
+      >
+        <div
+          class="kantoor"
+        >
+          <p
+            class="title"
+          >
+            Kantoor 1
+          </p>
+          <p
+            class="adress"
+          >
+            teststraat 2000 Antwerpen
+          </p>
+          <a
+            class="phone"
+            href="tel:034792341"
+          >
+            Tel.: 
+            034792341
+          </a>
+          <br />
+          <button
+            class="button false primary md false button beige"
+            type="button"
+          >
+            <p
+              class="label"
+            >
+              ctaLabel
+            </p>
+          </button>
+        </div>
+        <div
+          class="kantoor"
+        >
+          <p
+            class="title"
+          >
+            Kantoor 2 met een iets langere titel
+          </p>
+          <p
+            class="adress"
+          >
+            blastraat 2000 Antwerpen
+          </p>
+          <a
+            class="phone"
+            href="tel:037293456"
+          >
+            Tel.: 
+            037293456
+          </a>
+          <br />
+          <button
+            class="button false primary md false button beige"
+            type="button"
+          >
+            <p
+              class="label"
+            >
+              ctaLabel
+            </p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

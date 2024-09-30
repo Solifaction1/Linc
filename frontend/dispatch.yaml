@@ -1,0 +1,7 @@
+dispatch:
+  # Redirect requests to linc.legal to the frontend service.
+  - url: "linc.legal/*"
+    service: frontend
+
+  - url: "www.linc.legal/*"
+    service: frontend

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PopUp renders a PopUp 1`] = `
+<div>
+  <div
+    class="backgroundBlur"
+  />
+  <div
+    class="className popUp open"
+  >
+    <h2>
+      Hier komt een grote titel
+    </h2>
+    <button
+      class="
+			closeButton 
+			actionButton 
+			close 
+			md"
+      type="button"
+    >
+      <div />
+      <div />
+    </button>
+  </div>
+</div>
+`;

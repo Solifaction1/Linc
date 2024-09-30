@@ -1,0 +1,370 @@
+@import 'styles/vars';
+@import 'styles/utilities';
+
+.button {
+	position: relative;
+
+	border-radius: 50px;
+
+	cursor: pointer;
+
+	font-family: $font-family;
+
+	&[disabled],
+	&[disabled]:hover,
+	&[disabled]::before {
+		background: transparent;
+
+		opacity: 0.5;
+		cursor: not-allowed;
+		pointer-events: none;
+	}
+
+	&.sm {
+		padding: 0.8rem 1.2rem;
+		font-size: $font-size-text-sm;
+	}
+
+	&.md {
+		padding: 0.8rem 2rem;
+		font-size: $font-size-text-md;
+	}
+
+	&.lg {
+		padding: 1.3rem 2.7rem;
+		font-size: $font-size-text-lg;
+	}
+
+	.label {
+		font-weight: $font-weight-light;
+	}
+
+	&.primary {
+		border: 1px solid $color-beige-dark;
+		background: transparent;
+
+		.label {
+			color: $color-beige-dark;
+		}
+
+		&:hover {
+			background: $color-beige-dark-opacity-25;
+
+			.label {
+				color: $color-beige-dark;
+			}
+		}
+
+		&:active {
+			background: $color-beige-dark;
+
+			.label {
+				color: $color-white;
+			}
+		}
+
+		&.is-loading {
+			@extend %loading-animation;
+
+			&::after {
+				border-color: $color-gray-tint-80;
+			}
+		}
+
+		&.light {
+			border: 1px solid $color-beige;
+
+			.label {
+				color: $color-beige;
+			}
+
+			&:hover {
+				background: $color-beige-opacity-25;
+			}
+
+			&:active {
+				border: 1px solid $color-gray;
+				background: $color-beige;
+
+				.label {
+					color: $color-gray;
+				}
+			}
+		}
+
+		&.dark {
+			border: 1px solid $color-gray;
+
+			.label {
+				color: $color-gray;
+			}
+
+			&:hover {
+				background: $color-gray-opacity-25;
+			}
+
+			&:active {
+				background: $color-gray;
+
+				.label {
+					color: $color-beige;
+				}
+			}
+		}
+	}
+	&.submit {
+		border: 1px solid $color-beige-dark;
+		background: $color-beige-dark;
+
+		.label {
+			color:$color-white;
+		}
+
+		&:hover {
+			background: $color-beige-dark-opacity-25;
+
+			.label {
+				color: $color-beige-dark;
+			}
+		}
+
+		&:active {
+			background: $color-beige-dark;
+
+			.label {
+				color: $color-white;
+			}
+		}
+
+		&.is-loading {
+			@extend %loading-animation;
+
+			&::after {
+				border-color: $color-gray-tint-80;
+			}
+		}
+
+		&.light {
+			border: 1px solid $color-beige;
+
+			.label {
+				color: $color-beige;
+			}
+
+			&:hover {
+				background: $color-beige-opacity-25;
+			}
+
+			&:active {
+				border: 1px solid $color-gray;
+				background: $color-beige;
+
+				.label {
+					color: $color-gray;
+				}
+			}
+		}
+
+		&.dark {
+			border: 1px solid $color-gray;
+
+			.label {
+				color: $color-gray;
+			}
+
+			&:hover {
+				background: $color-gray-opacity-25;
+			}
+
+			&:active {
+				background: $color-gray;
+
+				.label {
+					color: $color-beige;
+				}
+			}
+		}
+	}
+
+	&.secondary {
+		border: 1px solid $color-beige-dark;
+		background: transparent;
+
+		&.is-loading {
+			@extend %loading-animation;
+
+			&::after {
+				border-color: $color-gray;
+			}
+		}
+
+		&.blueGray {
+			border: 1px solid $color-blue-gray-dark;
+
+			.label {
+				color: $color-blue-gray-dark;
+			}
+
+			&:hover {
+				background: $color-blue-gray-dark-opacity-25;
+			}
+
+			&:active {
+				background: $color-blue-gray-dark;
+
+				.label {
+					color: $color-blue-gray;
+				}
+			}
+		}
+
+		&.darkGreen {
+			border: 1px solid $color-green;
+
+			.label {
+				color: $color-green;
+			}
+
+			&:hover {
+				background: $color-green-opacity-25;
+			}
+
+			&:active {
+				background: $color-green;
+
+				.label {
+					color: $color-green-dark;
+				}
+			}
+		}
+
+		&.lightGreen {
+			border: 1px solid $color-green-dark;
+
+			.label {
+				color: $color-green-dark;
+			}
+
+			&:hover {
+				background: $color-green-dark-opacity-25;
+			}
+
+			&:active {
+				background: $color-green-dark;
+
+				.label {
+					color: $color-green;
+				}
+			}
+		}
+
+		&.beige {
+			border: 1px solid $color-beige-dark;
+
+			.label {
+				color: $color-beige-dark;
+			}
+
+			&:hover {
+				background: $color-beige-dark-opacity-25;
+			}
+
+			&:active {
+				background: $color-beige-dark;
+
+				.label {
+					color: $color-beige;
+				}
+			}
+		}
+
+		&.lightBlue {
+			border: 1px solid $color-blue-dark;
+
+			.label {
+				color: $color-blue-dark;
+			}
+
+			&:hover {
+				background: $color-blue-dark-opacity-25;
+			}
+
+			&:active {
+				background: $color-blue-dark;
+
+				.label {
+					color: $color-blue;
+				}
+			}
+		}
+
+		&.darkBlue {
+			border: 1px solid $color-blue;
+
+			.label {
+				color: $color-blue;
+			}
+
+			&:hover {
+				background: $color-blue-opacity-25;
+			}
+
+			&:active {
+				background: $color-blue;
+
+				.label {
+					color: $color-blue-dark;
+				}
+			}
+		}
+
+		&.red {
+			border: 1px solid $color-red-dark;
+
+			.label {
+				color: $color-red-dark;
+			}
+
+			&:hover {
+				background: $color-red-dark-opacity-25;
+			}
+
+			&:active {
+				background: $color-red-dark;
+
+				.label {
+					color: $color-red;
+				}
+			}
+		}
+	}
+
+	&.tertiary {
+		border: 1px solid $color-white;
+		background: transparent;
+
+		.label {
+			color: $color-white;
+		}
+
+		&:hover {
+			background: $color-white-opacity-25;
+		}
+
+		&:active {
+			background: $color-white;
+
+			.label {
+				color: transparent;
+			}
+		}
+
+		&.is-loading {
+			@extend %loading-animation;
+
+			&::after {
+				border-color: $color-gray;
+			}
+		}
+	}
+}

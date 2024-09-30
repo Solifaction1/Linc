@@ -1,0 +1,33 @@
+@import 'styles/vars';
+@import 'styles/utilities';
+
+.contactItems {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    @media (max-width: $break-md) {
+        margin-bottom: calc(#{$spacing-base} * 3);
+    }
+
+    .link {
+        height: 5rem;
+        margin-bottom: 0;
+        cursor: pointer;
+    }
+
+    .icon {
+        bottom: 0;
+
+        width: 4.2rem;
+        height: 4.2rem;
+        margin-top: 0.6rem;
+        margin-right: calc(#{$spacing-base} * 2);
+        padding: 1rem;
+        border-radius: 50%;
+
+        &:hover {
+            background: $color-beige-dark-opacity-25;            
+        }
+    }
+}

@@ -1,0 +1,57 @@
+@import "styles/vars";
+@import "styles/utilities";
+
+.iconsRow {
+    display: flex;
+    justify-content: flex-end;
+    max-height: 5.2rem;
+
+    @media (max-width: $break-md) {
+        justify-content: flex-start;
+        margin-bottom: calc(#{$spacing-base} * 8);
+    }
+
+    .link {
+        margin-right: calc(#{$spacing-base} * 4);
+        @media (max-width: $break-md) {
+            margin-right: calc(#{$spacing-base} * 2);
+        }
+
+        button {
+            border: 1px solid $color-beige;
+        }
+
+        p {
+            color: $color-beige !important;
+            font-size: $font-size-text-md;
+        }
+    }
+
+    .text {
+        margin-right: calc(#{$spacing-base} * 2);
+
+        color: $color-beige;
+
+        white-space: pre-line;
+        line-height: 2.4rem;
+    }
+
+    .icon {
+        width: 4.2rem;
+        height: 4.2rem;
+        margin-right: calc(#{$spacing-base} * 2);
+        padding: 1rem;
+        border: 1px solid $color-beige;
+        border-radius: 50%;
+
+        fill: $color-black;
+
+        path {
+            fill: $color-beige;
+        }
+
+        &:hover {
+            background: $color-beige-dark-opacity-25;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "form_submissions",
+  "info": {
+    "singularName": "form-submission",
+    "pluralName": "form-submissions",
+    "displayName": "Form submission",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "data": {
+      "type": "dynamiczone",
+      "components": [
+        "formfields.inputfield",
+        "formfields.select-field",
+        "formfields.text-area-field"
+      ],
+      "required": true,
+      "min": 1
+    },
+    "FormId": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import 'styles/vars';
+@import 'styles/utilities';
+
+.verticalAccordion {
+    @extend %page-container;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 6rem;
+
+    article {
+        p {
+            color: $color-green-dark;
+        }
+
+        h1, h2, h3 {
+            color : $color-beige-dark;
+        }
+
+        p, h1, h2, h3 {
+            font-weight: $font-weight-light;
+        }
+
+        @media (max-width: $break-md) {
+            p {
+                font-size: $font-size-text-lg;
+            }
+
+            h2 {
+                font-size: $font-size-title-md-m;
+                line-height: 3.5rem;			
+            }
+        }
+    }
+
+    @media (max-width: $break-lg) {
+        grid-template-areas:
+            'left left left left left left left left left left left left'
+            'right right right right right right right right right right right right';
+    }
+
+    @media (max-width: $break-md) {
+        display: flex;
+        flex-wrap: wrap;
+
+        margin-top: calc(#{$spacing-base} * 7.5);
+        padding-top: 0;
+
+        padding-inline: 2rem;
+
+        article:nth-child(1) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    .cta {
+        margin-top: 4rem;
+    }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_vertical_list_descriptions",
+  "info": {
+    "displayName": "VerticalListDescription"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "text.ygwys"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.cta"
+    }
+  }
+}

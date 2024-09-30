@@ -1,0 +1,239 @@
+@import 'styles/vars';
+@import 'styles/utilities';
+
+.ygwys {
+	display: block;
+
+	&.inline {
+		@extend %page-container;
+		display: block;
+		grid-template-columns: 1fr;
+
+		@media (min-width: $break-md) {
+			h1,
+			h2,
+			h3 {
+				width: 75rem;
+			}
+
+			ul {
+				width: 68rem;
+			}
+
+			h1,
+			h2,
+			h3,
+			p,
+			ul,
+			ol,
+			img {
+				max-width: 75rem;
+				margin: 0 auto;
+				margin-bottom: 1.6rem;
+			}
+
+			p {
+				margin-right: 0;
+				margin-left: 0;
+			}
+		}
+
+		h1,
+		h2 {
+			font-weight: $font-weight-semi-bold;
+		}
+	}
+
+	a {
+		color: $color-gray;
+		text-decoration: underline;
+	}
+
+	img {
+		max-width: 100%;
+	}
+
+	figure {
+		&[class*='image'] {
+			margin: 0 auto;
+		}
+
+		&[class*='image-style-side'] {
+			margin: unset;
+			margin-left: auto;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	strong {
+		font-weight: $font-weight-bold;
+	}
+
+	table {
+		@extend %body-copy-3;
+		width: 100%;
+		max-width: 100%;
+		margin: 2rem 0;
+
+		td {
+			padding: 1rem;
+		}
+	}
+
+	i {
+		font-style: italic;
+	}
+
+	ul {
+		@extend %list-custom-bullet;
+		height: 100%;
+		list-style-type: disc;
+
+		li {
+			@extend %body-copy-2;
+			padding-left: calc(#{$spacing-base} * 1);
+			font-weight: $font-weight-light;
+		}
+	}
+
+	ol {
+		max-width: 100%;
+		margin-left: 2rem;
+		counter-reset: item;
+
+		li {
+			@extend %body-copy-2;
+
+			max-width: 100%;
+			padding-left: calc(#{$spacing-base} * 2);
+
+			list-style-position: outside;
+
+			font-weight: $font-weight-light;
+
+			counter-increment: item;
+
+			&::marker {
+				content: counter(item) '.';
+			}
+
+			ol {
+				padding-left: calc(#{$spacing-base} * 2);
+
+				& > li {
+					margin-top: 1.8rem;
+				}
+
+				li {
+					@extend %body-copy-2;
+
+					max-width: 100%;
+					padding-left: calc(#{$spacing-base} * 2);
+
+					list-style-position: outside;
+
+					font-weight: $font-weight-light;
+
+					&::marker {
+						content: counters(item, '.') ' ';
+					}
+				}
+			}
+		}
+	}
+
+	h1,
+	h2,
+	h3 {
+		font-weight: $font-weight-medium;
+
+		b {
+			font-weight: $font-weight-semi-bold;
+		}
+
+		u {
+			background-position-x: 4px, 0, 100%;
+			background-position-y: calc(100% - 0px);
+			background-size: calc(100% - 8px) 8px, auto 8px, auto 8px;
+			@media (max-width: $break-md) {
+				background-position-x: 3px, 0, 100%;
+				background-size: calc(100% - 6px) 6px, auto 6px, auto 6px;
+			}
+		}
+	}
+
+	h1 {
+		@extend %h1;
+		margin-bottom: calc(#{$spacing-base} * 4);
+
+		mark {
+			background-position-y: calc(100% - 18px);
+			@media (max-width: $break-md) {
+				background-position-y: calc(100% - 14px);
+			}
+		}
+	}
+
+	h2 {
+		@extend %h2;
+		margin-bottom: calc(#{$spacing-base} * 4);
+
+		mark {
+			background-position-y: calc(100% - 14px);
+			@media (max-width: $break-md) {
+				background-position-y: calc(100% - 11px);
+			}
+		}
+	}
+
+	h3 {
+		@extend %h3;
+		margin-bottom: calc(#{$spacing-base} * 3);
+
+		mark {
+			background-position-y: calc(100% - 10px);
+			background-size: calc(100% - 6px) 6px, auto 6px, auto 6px;
+			@media (max-width: $break-md) {
+				background-position-x: 2px, 0, 100%;
+				background-position-y: calc(100% - 8px);
+				background-size: calc(100% - 4px) 4px, auto 4px, auto 4px;
+			}
+		}
+
+		u,
+		a {
+			background-position-x: 3px, 0, 100%;
+			background-size: calc(100% - 6px) 6px, auto 6px, auto 6px;
+			@media (max-width: $break-md) {
+				background-position-x: 2px, 0, 100%;
+				background-size: calc(100% - 4px) 4px, auto 4px, auto 4px;
+			}
+		}
+	}
+
+	p {
+		@extend %body-copy-1;
+	}
+
+	blockquote {
+		position: relative;
+
+		width: auto;
+		max-width: 100%;
+		margin: calc(#{$spacing-base} * 8);
+		margin-top: calc(#{$spacing-base} * 8 + 6rem);
+		padding: calc(#{$spacing-base} * 9) calc(#{$spacing-base} * 22);
+
+		p,
+		u,
+		a {
+			@extend %body-copy-1;
+			grid-area: p;
+			margin-top: unset;
+			color: white;
+		}
+	}
+}

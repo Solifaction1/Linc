@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_tiles_ygwys_cta_tiles",
+  "info": {
+    "displayName": "YGWYS CTA Tile",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "component",
+      "repeatable": false,
+      "component": "text.ygwys",
+      "required": true
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.cta",
+      "required": true
+    }
+  }
+}

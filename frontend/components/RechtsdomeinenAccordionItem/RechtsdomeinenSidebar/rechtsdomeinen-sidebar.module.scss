@@ -1,0 +1,69 @@
+@import "styles/vars";
+@import 'styles/utilities';
+
+.rechtsdomeinenSidebar {
+    display: flex;
+    flex-direction: column;
+    gap: calc(#{$spacing-base} * 5);
+
+    height: fit-content;
+    padding: calc(#{$spacing-base} * 12.5);
+    @media (max-width: $break-md) {
+        padding: calc(#{$spacing-base} * 7.5) calc(#{$spacing-base} * 5.5);;
+    }
+
+    background-color: $color-beige;
+
+    .title {
+        color: $color-beige-dark;
+
+        font-size: $font-size-title-md-m;
+        font-weight: $font-weight-light;
+        line-height: 3.5rem;
+
+        @media (max-width: $break-md) {
+            font-size: $font-size-title-xs;
+            line-height: 2.25rem;
+        }
+    }
+
+    .employeeData {
+        display: flex;
+        flex-direction: column;
+        gap: calc(#{$spacing-base} * 2.5);
+
+        .employee {
+            p {
+                line-height: 2.7rem;
+                @media (max-width: $break-md) {
+                    font-size: $font-size-title-xs;
+                    line-height: 2.1rem;
+                }
+            }
+
+            .name {
+                color: $color-beige-dark;
+            }
+
+            .telephone {
+                color: $color-brown;
+            }
+        }
+    }
+
+    .description {
+        color: $color-beige-dark;
+        font-weight: $font-weight-medium;
+        
+        @media (max-width: $break-md) {
+            p {
+                font-size: $font-size-text-xs;
+                line-height: 2.4rem;
+            }
+        }
+    }
+
+    button {
+        width: fit-content;
+    }
+}

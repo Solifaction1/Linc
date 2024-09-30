@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders a Button 1`] = `
+<div>
+  <button
+    class="button isLoading primary md false Button beige"
+    disabled=""
+    type="button"
+  >
+    Children
+    <p
+      class="label"
+    >
+      label
+    </p>
+  </button>
+</div>
+`;

@@ -1,0 +1,63 @@
+@import "styles/vars";
+@import 'styles/utilities';
+
+.container{
+    @extend %form-container;
+
+    select {
+        width: 100%;
+        max-width: $input-field-width;
+        min-height: $input-field-height;
+        margin: .5rem 0 1rem;
+        border: 1px solid $color-beige-dark;
+        border-radius: 1.375rem;
+
+        background: url("/images/arrow-down.webp") no-repeat calc(100% - 0.5rem);
+        background-size: 2rem;
+            color:$color-beige-dark;
+
+        padding-block: 0.5rem;
+        padding-inline: 1.3rem;
+        appearance: none;
+            font-size: $font-size-text-md;
+            line-height: 2.7rem;
+
+        &:focus, &:hover {
+            border: 1px solid $color-gray-shade-30;
+        }
+        
+
+        &.error {
+            border: 1px solid $color-error;
+            color: inherit;
+        }
+
+        @media (max-width: $break-xlg) {
+            max-width: 100%;
+        }
+
+        @media (max-width: $break-s) {
+            max-width: 100%;
+        }
+
+        &.email {
+            // specific email styling if necessary
+        }
+    }
+}
+
+.error {
+    color: $color-error;
+}
+
+.sm {
+    font-size: $font-size-text-sm;
+}
+
+.md {
+    font-size: $font-size-text-md;
+}
+
+.lg {
+    font-size: $font-size-text-lg;
+}

@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataCompliantLinks renders the DataCompliantLinks 1`] = `
+<div>
+  <div
+    class="dataCompliantLinks className"
+  >
+    <div
+      class="dataCompliantLinksCollection"
+    >
+      <p
+        class="copyright"
+      >
+        Copyright linc.legal 
+        2023
+      </p>
+      <div
+        class="languageSwitch"
+      >
+        <div
+          class="languageSwitch"
+        >
+          <button
+            class="languageLink activeLang"
+            type="button"
+          >
+            LOCALE
+            <svg
+              class="false arrow"
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"
+              />
+            </svg>
+          </button>
+          <div
+            class="accordionWrapper"
+            style="height: 0px;"
+          >
+            <div
+              class="languageLinkWrapper"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="links"
+      >
+        <a
+          class="link link link md false"
+          href="/parent1"
+        >
+          <p>
+            Parent 1
+          </p>
+        </a>
+        <a
+          class="link link link md false"
+          href="/parent2"
+        >
+          <p>
+            Parent 2
+          </p>
+        </a>
+        <a
+          class="link link link md false"
+          href="/contact-information"
+        >
+          <p>
+            Contact Information
+          </p>
+        </a>
+        <a
+          class="link link link md false"
+          href="/data-compliant-links"
+        >
+          <p>
+            Data Compliant Links
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

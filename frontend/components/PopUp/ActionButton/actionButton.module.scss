@@ -1,0 +1,74 @@
+@import "styles/vars";
+@import "styles/utilities";
+
+.actionButton {
+  $button-padding: 1rem;
+  position: relative;
+
+  width: 3rem;
+  height: 3rem;
+  padding: $button-padding;
+  border: none;
+
+  background: $color-gray-tint-80;
+
+  cursor: pointer;
+  
+  &:hover{
+    background: $color-gray-tint-70;
+  }
+  
+  &:active{
+    background: $color-gray-tint-60;
+  }
+
+  &.sm{
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  &.md{
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  &.lg{
+    width: 4rem;
+    height: 4rem;
+  }
+
+
+  &[disabled],
+  &[disabled]:hover,
+  &[disabled]::before {
+    opacity: .5;
+    pointer-events: none;
+  }
+
+
+  &.close{
+    div{
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: .3rem;
+      height: calc(100% - $button-padding);
+
+      background: $color-gray-shade-80;
+
+      transform: translate(-50%, -50%);
+    
+    
+      &:nth-child(1){
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    
+      &:nth-child(2){
+        transform: translate(-50%, -50%) rotate(45deg);
+
+      }
+    }
+  }
+}

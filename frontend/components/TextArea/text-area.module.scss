@@ -1,0 +1,25 @@
+@import 'styles/vars';
+@import 'styles/utilities';
+
+.container{
+  @extend %form-container;
+
+  textarea{
+    width: 100%;
+    max-width:calc($input-field-width - 0.4rem);
+    min-height: 10rem;
+    max-height: 24rem;
+    padding:1rem;
+    border-color: $color-beige-dark;
+    border-radius: 1.5rem;
+
+    color:$color-beige-dark;
+    @media (max-width: $break-xlg) {
+      max-width: 100%;
+    }
+
+    @media (max-width: $break-s) {
+      max-width: 100%;
+    }
+  }
+}

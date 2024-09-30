@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_blogs_ctas",
+  "info": {
+    "displayName": "Blogs CTA"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.cta"
+    }
+  }
+}

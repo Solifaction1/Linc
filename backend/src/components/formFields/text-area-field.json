@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_formfields_text_area_fields",
+  "info": {
+    "displayName": "TextAreaField",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "required": {
+      "type": "boolean",
+      "default": false
+    },
+    "label": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "textarea"
+      ],
+      "default": "textarea",
+      "required": true
+    },
+    "place_holder": {
+      "type": "string",
+      "required": false
+    },
+    "value": {
+      "type": "text",
+      "required": false
+    }
+  }
+}

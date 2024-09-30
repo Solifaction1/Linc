@@ -1,0 +1,20 @@
+@import "styles/vars";
+
+.indicator {
+  display: inline-block;
+
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border: 1px solid $color-gray;
+
+  background-color: $color-white;
+
+  cursor: pointer;
+
+  transition: background-color $animation-in ease-in-out, transform $animation-in ease-in-out;
+}
+
+.selected {
+  background: $color-gray-shade-30;
+  transform: scale(140%);
+}

@@ -1,0 +1,41 @@
+@import 'styles/vars';
+@import 'styles/utilities';
+
+.rechtsdomeinenAccordionItem {
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+  grid-gap: 30rem;
+
+  padding-bottom: calc(#{$spacing-base} * 8);
+  
+  @media (max-width: $break-hd) {
+    grid-gap: 20rem;
+  }
+
+  @media (max-width: $break-md) {
+    grid-gap: 4rem;
+  }
+
+  @media (max-width: $break-xlg) {
+    grid-template-columns:repeat(1, 1fr);
+  }
+
+  .text {
+    margin-bottom: calc(#{$spacing-base} * 4);
+    margin-left: 15vw;
+    @media (max-width: $break-xlg) {
+      margin-right: 15vw;
+    }
+  }
+
+  .image {
+    object-fit: cover;
+    max-width: 840px;
+    max-height: 580px;
+
+    @media (max-width: $break-xlg) {
+      max-width: 100%;
+    }
+  }
+}
+

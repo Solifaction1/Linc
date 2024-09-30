@@ -1,0 +1,9 @@
+.gcloudignore
+.git
+.gitignore
+
+<!-- /pages -->
+
+node_modules/
+!.env
+.next

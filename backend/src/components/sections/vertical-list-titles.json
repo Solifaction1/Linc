@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_sections_vertical_list_titles",
+  "info": {
+    "displayName": "VerticalListTitles"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
